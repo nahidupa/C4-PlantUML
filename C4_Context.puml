@@ -25,7 +25,7 @@ skinparam actor<<person>> {
     BorderColor #073B6F
 }
 
-skinparam rectangle<<external_person>> {
+skinparam actor<<external_person>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXTERNAL_PERSON_BG_COLOR
@@ -78,10 +78,10 @@ endlegend
 ' ##################################
 
 !define Person(e_alias, e_label) actor "==e_label" <<person>> as e_alias
-!define Person(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<person>> as e_alias
+!define Person(e_alias, e_label, e_descr) actor "==e_label\n\n e_descr" <<person>> as e_alias
 
 !define Person_Ext(e_alias, e_label) actor "==e_label" <<external_person>> as e_alias
-!define Person_Ext(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<external_person>> as e_alias
+!define Person_Ext(e_alias, e_label, e_descr) actor "==e_label\n\n e_descr" <<external_person>> as e_alias
 
 !define System(e_alias, e_label) rectangle "==e_label" <<system>> as e_alias
 !define System(e_alias, e_label, e_descr) rectangle "==e_label\n\n e_descr" <<system>> as e_alias
