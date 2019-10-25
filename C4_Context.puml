@@ -18,7 +18,7 @@
 ' Styling
 ' ##################################
 
-skinparam rectangle<<person>> {
+skinparam actor<<person>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor PERSON_BG_COLOR
